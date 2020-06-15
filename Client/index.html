@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    
+    <style>
+        #messages{
+            width:500px;
+            max-width:50%;
+            height:400px;
+            overflow-y: scroll;
+            border: 1px solid rgb(35, 43, 37);
+            box-shadow: 0px 0px 22px rgb(248, 246, 246) inset;
+            text-shadow:rgb(177, 241, 177);
+            
+            
+        }
+
+        .message{
+            margin: 20px;
+            padding:0px;
+            border-radius: 5px;
+            border: 5px solid rgb(72, 88, 79);
+            background: rgb(169, 240, 205);
+        }
+       
+        
+        
+
+
+    </style>
+    
+</head>
+<body>
+
+<body bgcolor="#8FBC8F"></body>
+    <center><font size="5" face="Arial" font color="#F5F5F5"<h1> <b><i> Chat de denuncias </b>
+    
+
+  <div id="messages">
+        </div>
+
+    <form onsubmit="return addMessage(this)">
+    <p allign= justify><textarea id="text" placeholder="Mensaje"  rows="5" cols="30" maxlength="300"></textarea> </br> </p>
+        <input type="file" id="file"> </br>
+        <input type="submit" value="Enviar"> </br>
+       <p allign=justify></p><font size="1" face="Arial" font color="#2F4F4F"> <h2><b>Telefono de ayuda de usuario y de proporcion de mas datos:<ins>7590-3324</ins></b></h2></font>
+        
+
+    </form>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../notificaciones.js"></script>
+    <script src="main.js"></script>
+   
+</body>
+</html>
